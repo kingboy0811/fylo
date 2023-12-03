@@ -50,7 +50,7 @@ body {
     line-height: normal;
 }
 
-.hero-container {
+.boxes-container {
     display: flex;
     gap: 36px;
     flex-direction: column;

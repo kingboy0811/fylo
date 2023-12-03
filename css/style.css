@@ -1,6 +1,7 @@
 :root {
     --first-color: #1B2330;
     --second-color: #FFF;
+    --third-color: #181F2B;
 }
 
 *,
@@ -27,6 +28,11 @@ body {
     gap: 833px;
     padding-top: 73px;
     padding-bottom: 75px;
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50% -50%);
+    top: 0;
 }
 
 .header-container .header-link .img {
@@ -58,18 +64,18 @@ body {
     background-color: var(--first-color);
 }
 
-.left .img {
+.boxes-container .left .img {
     width: 720px;
     height: 534px;
 }
 
-.right {
+.boxes-container .right {
     display: flex;
     gap: 32px;
     flex-direction: column;
 }
 
-.right__heading {
+.boxes-container .right__heading {
     width: 734px;
     color: var(--second-color);
     text-align: center;
@@ -80,7 +86,7 @@ body {
     line-height: 60px;
 }
 
-.right__text {
+.boxes-container .right__text {
     width: 589px;
     color: var(--second-color);
     text-align: center;
@@ -91,7 +97,7 @@ body {
     line-height: 30px;
 }
 
-.right__link {
+.boxes-container .right__link {
     color: var(--second-color);
     font-size: 16px;
     font-style: normal;
@@ -102,4 +108,152 @@ body {
     background-color: #63E1D9;
     padding: 18px 95px;
     border-radius: 24px;
+}
+
+.hero-container {
+    background-color: var(--third-color);
+    padding-top: 158px;
+}
+
+.hero-container .card__heading {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-container .card__text {
+    width: 363px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+}
+
+.hero-container .card {
+    width: 349px;
+    height: 215px;
+    text-align: center;
+
+}
+
+.hero-container .cards {
+    display: flex;
+    justify-content: center;
+    gap: 147px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.info-container {
+    background-color: var(--third-color);
+    padding-top: 136px;
+    display: flex;
+    gap: 57px;
+    align-items: center;
+    padding-bottom: 179px;
+}
+
+.info-container .right__img {
+    width: 614.755px;
+    height: 463.633px;
+}
+
+.info-container .right__heading {
+    width: 506px;
+    color: var(--second-color);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.info-container .right__text {
+    width: 563px;
+    color: var(--second-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+.info-container .right__p {
+    width: 563px;
+    color: var(--second-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.info-container .right__link {
+    color: #62E0D9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.fylo-container {
+    background-color: var(--third-color);
+}
+
+.fylo-container .cards {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.fylo-container .card {
+    width: 360px;
+    height: 200px;
+    text-align: center;
+    border-radius: 3.933px;
+    align-items: center;
+    background: #202A3C;
+    box-shadow: 5px 5px 8px 0px rgba(56, 56, 56, 0.10);
+}
+
+.fylo-container .card__img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.fylo-container .card__heading {
+    color: var(--second-color);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.fylo-container .card__text {
+    color: var(--second-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    padding-top: 40px;
+    margin-bottom: 24px;
+
+}
+
+.fylo-container .card__p {
+    color: var();
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0.5px;
 }
